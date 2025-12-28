@@ -200,6 +200,22 @@
             <p style="margin-top: 20px; font-size: 1.3rem;">Welkom, <span id="player-name-display"></span>!</p>
         </div>
 
+        <!-- Host Music Listen Phase -->
+        <div class="screen" id="host-music-listen">
+            <div class="question-header">
+                <span class="question-number" id="listen-question-number">Vraag 1/25</span>
+                <span style="font-size: 1.5rem; color: var(--pink);">♪ Luister...</span>
+            </div>
+            <div class="music-badge" style="font-size: 1.5rem; padding: 15px 30px;"><span>♪</span> Muziekvraag</div>
+            <div class="audio-visualizer" style="margin: 30px 0; transform: scale(1.5);">
+                <div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div>
+                <div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div><div class="audio-bar"></div>
+            </div>
+            <p style="font-size: 1.3rem; opacity: 0.7; margin-bottom: 30px;">Speel de muziek af op je laptop...</p>
+            <div id="music-info" style="background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; margin-bottom: 30px;"></div>
+            <button class="btn btn-primary" onclick="showMusicQuestion()">Toon de vraag!</button>
+        </div>
+
         <!-- Host Question -->
         <div class="screen" id="host-question">
             <div class="question-header">
@@ -303,19 +319,19 @@
         const questions = [
             { question: "Welke politieke partij stapte in juni 2025 uit de coalitie, waardoor kabinet-Schoof viel?", answers: ["VVD", "PVV", "NSC", "BBB"], correct: 1 },
             { question: "In welke stad was de eerste NAVO-top ooit in Nederland (juni 2025)?", answers: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], correct: 2 },
-            { question: "Welk nummer hoor je?", answers: ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], correct: 1, type: "music", videoId: "kPa7bsKwL-c", startTime: 60 },
+            { question: "Welk nummer hoor je?", answers: ["APT. - ROSE & Bruno Mars", "Die With A Smile - Lady Gaga & Bruno Mars", "Espresso - Sabrina Carpenter", "Birds of a Feather - Billie Eilish"], correct: 1, type: "music", startTime: 60 },
             { question: "Wie was in 2025 secretaris-generaal van de NAVO?", answers: ["Jens Stoltenberg", "Mark Rutte", "Dick Schoof", "Ursula von der Leyen"], correct: 1 },
             { question: "Hoeveel mensen liepen mee bij de grootste 'Rode Lijn' demonstratie (oktober 2025)?", answers: ["50.000", "100.000", "150.000", "250.000"], correct: 3 },
-            { question: "Welk nummer hoor je?", answers: ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], correct: 2, type: "music", videoId: "ekr2nIex040", startTime: 45 },
+            { question: "Welk nummer hoor je?", answers: ["Die With A Smile", "Ordinary - Alex Warren", "APT. - ROSE & Bruno Mars", "Echte Liefde Is Te Koop"], correct: 2, type: "music", startTime: 45 },
             { question: "Welke Nederlandse korte film won in 2025 een Oscar?", answers: ["De Oost", "Ik Ben Geen Robot", "Babygirl", "Haantjes"], correct: 1 },
             { question: "Op welke datum waren de Tweede Kamerverkiezingen in 2025?", answers: ["15 september", "1 oktober", "29 oktober", "15 november"], correct: 2 },
-            { question: "Welk nummer hoor je?", answers: ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], correct: 1, type: "music", videoId: "3dZJXcuMlnk", startTime: 30 },
+            { question: "Welk nummer hoor je?", answers: ["Lunch - Billie Eilish", "Birds of a Feather - Billie Eilish", "Please Please Please - Sabrina Carpenter", "Good Luck, Babe! - Chappell Roan"], correct: 1, type: "music", startTime: 30 },
             { question: "Welke partij werd samen met PVV de grootste (beiden 26 zetels)?", answers: ["VVD", "GroenLinks-PvdA", "D66", "CDA"], correct: 1 },
             { question: "Welk muziekspel veroverde in 2025 de huiskamers?", answers: ["30 Seconds", "Hitster", "Stef Stuntpiloot", "SongPop"], correct: 1 },
-            { question: "Welk nummer hoor je?", answers: ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], correct: 0, type: "music", videoId: "eVli-tstM5E", startTime: 55 },
+            { question: "Welk nummer hoor je?", answers: ["Espresso - Sabrina Carpenter", "Taste - Sabrina Carpenter", "Please Please Please", "Feather - Sabrina Carpenter"], correct: 0, type: "music", startTime: 55 },
             { question: "Welk programma won de Gouden Televizier-Ring 2025?", answers: ["Haantjes", "Voetbal Ouders", "Vandaag Inside", "Jinek"], correct: 2 },
             { question: "Hoeveel jaar bestond Amsterdam in 2025?", answers: ["700 jaar", "725 jaar", "750 jaar", "800 jaar"], correct: 2 },
-            { question: "Welk nummer hoor je?", answers: ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], correct: 2, type: "music", videoId: "ApXoWvfEYVU", startTime: 50 },
+            { question: "Welk nummer hoor je?", answers: ["HOT TO GO! - Chappell Roan", "Red Wine Supernova", "Good Luck, Babe! - Chappell Roan", "Pink Pony Club"], correct: 2, type: "music", startTime: 50 },
             { question: "Welke natuurramp trof Los Angeles begin januari 2025?", answers: ["Aardbeving", "Orkaan", "Natuurbranden", "Overstroming"], correct: 2 },
             { question: "Hoe heet de defensienorm afgesproken tijdens de NAVO-top?", answers: ["The Amsterdam Promise", "The Hague Pledge", "The Rotterdam Accord", "The Dutch Deal"], correct: 1 },
             { question: "Wie werd in 2025 topscoorder aller tijden van Oranje?", answers: ["Robin van Persie", "Memphis Depay", "Virgil van Dijk", "Cody Gakpo"], correct: 1 },
@@ -446,26 +462,54 @@
 
         async function showQuestion() {
             const q = questions[gameState.currentQuestion];
+
+            // Voor muziekvragen: eerst luisterfase
+            if (q.type === 'music') {
+                document.getElementById('listen-question-number').textContent = `Vraag ${gameState.currentQuestion + 1}/${questions.length}`;
+
+                // Toon welk nummer afgespeeld moet worden (voor de host)
+                const songName = q.answers[q.correct];
+                const appleMusicUrl = `https://music.apple.com/nl/search?term=${encodeURIComponent(songName)}`;
+                const spotifyUrl = `https://open.spotify.com/search/${encodeURIComponent(songName)}`;
+
+                const musicInfo = document.getElementById('music-info');
+                musicInfo.innerHTML = `
+                    <p style="font-size: 0.9rem; opacity: 0.6; margin-bottom: 10px;">Speel dit nummer af:</p>
+                    <p style="font-size: 1.4rem; font-weight: 700; margin-bottom: 15px;">${songName}</p>
+                    <p style="font-size: 0.9rem; opacity: 0.6; margin-bottom: 15px;">Start vanaf ${q.startTime || 0} seconden</p>
+                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                        <a href="${appleMusicUrl}" target="_blank" class="btn btn-secondary" style="padding: 12px 20px; text-decoration: none;">🍎 Apple Music</a>
+                        <a href="${spotifyUrl}" target="_blank" class="btn btn-secondary" style="padding: 12px 20px; text-decoration: none;">🎵 Spotify</a>
+                    </div>
+                `;
+
+                showScreen('host-music-listen');
+                return; // Wacht tot host op "Toon de vraag" klikt
+            }
+
+            // Normale vraag
+            await showQuestionContent();
+        }
+
+        async function showMusicQuestion() {
+            // Update session zodat spelers naar vraagscherm gaan
+            await db
+                .from('game_sessions')
+                .update({ current_question: gameState.currentQuestion, updated_at: new Date().toISOString() })
+                .eq('id', gameState.sessionId);
+
+            await showQuestionContent();
+        }
+
+        async function showQuestionContent() {
+            const q = questions[gameState.currentQuestion];
             document.getElementById('question-number').textContent = `Vraag ${gameState.currentQuestion + 1}/${questions.length}`;
             document.getElementById('question-text').textContent = q.question;
 
+            // Geen video embed meer - host speelt muziek handmatig af
             const mediaContainer = document.getElementById('media-container');
             if (q.type === 'music') {
-                mediaContainer.innerHTML = `
-                    <div class="music-badge"><span>♪</span> Muziekvraag</div>
-                    <div class="video-container" style="position: relative;">
-                        <div class="video-overlay" id="video-overlay"></div>
-                        <iframe src="https://yewtu.be/embed/${q.videoId}?autoplay=1&start=${q.startTime}&quality=dash" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>`;
-                // Verberg overlay na 5 seconden (geeft tijd voor video laad + eventuele reclame)
-                setTimeout(() => {
-                    const overlay = document.getElementById('video-overlay');
-                    if (overlay) {
-                        overlay.style.transition = 'opacity 0.5s';
-                        overlay.style.opacity = '0';
-                        setTimeout(() => overlay.style.display = 'none', 500);
-                    }
-                }, 5000);
+                mediaContainer.innerHTML = `<div class="music-badge"><span>♪</span> Muziekvraag</div>`;
             } else {
                 mediaContainer.innerHTML = '';
             }
@@ -480,14 +524,16 @@
                 grid.appendChild(div);
             });
 
-            // Update session with current question
-            await db
-                .from('game_sessions')
-                .update({ current_question: gameState.currentQuestion, updated_at: new Date().toISOString() })
-                .eq('id', gameState.sessionId);
+            // Update session with current question (voor niet-muziek vragen)
+            if (questions[gameState.currentQuestion].type !== 'music') {
+                await db
+                    .from('game_sessions')
+                    .update({ current_question: gameState.currentQuestion, updated_at: new Date().toISOString() })
+                    .eq('id', gameState.sessionId);
+            }
 
             showScreen('host-question');
-            startTimer(q.type === 'music' ? 25 : 20);
+            startTimer(20);
         }
 
         function startTimer(seconds) {
