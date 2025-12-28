@@ -48,7 +48,7 @@
 
     { "question": "Wie werd in januari 2025 opnieuw president van de Verenigde Staten?", "answers": ["Joe Biden", "Donald Trump", "Kamala Harris", "Ron DeSantis"], "correct": 1, "category": "wereld" },
 
-    { "question": "Welke Nederlandse prinses ging in 2025 studeren?", "answers": ["Amalia", "Alexia", "Ariane", "Beatrix"], "correct": 1, "category": "nederland" },
+    { "question": "Welke Nederlandse prinses behaalde in 2025 haar diploma aan een school in Italië?", "answers": ["Amalia", "Alexia", "Ariane", "Beatrix"], "correct": 2, "category": "nederland" },
 
     { "question": "Welke streamingdienst bracht in 2025 de serie 'Wednesday' seizoen 2 uit?", "answers": ["Disney+", "Netflix", "Amazon Prime", "HBO Max"], "correct": 1, "category": "tieners" },
 
@@ -66,9 +66,9 @@
 
     { "question": "Wat werd het woord van het jaar 2025 volgens Van Dale?", "answers": ["Polarisatie", "Hallucineren", "Graaiflatie", "Doomscrolling"], "correct": 1, "category": "fun" },
 
-    { "question": "Welke Nederlandse schrijver won de Libris Literatuurprijs 2025?", "answers": ["Tommy Wieringa", "Marieke Lucas Rijneveld", "Hanna Bervoets", "Herman Koch"], "correct": 2, "category": "cultuur" },
+    { "question": "Welke debutant won de Libris Literatuurprijs 2025 met 'Oroppa'?", "answers": ["Tommy Wieringa", "Safae el Khannoussi", "Hanna Bervoets", "Herman Koch"], "correct": 1, "category": "cultuur" },
 
-    { "question": "Op welk eiland vond de NAVO-top plaats?", "answers": ["Texel", "Schiermonnikoog", "Marken", "Pampus"], "correct": 2, "category": "politiek" },
+    { "question": "In welk gebouw in Den Haag vond de NAVO-top 2025 plaats?", "answers": ["Binnenhof", "World Forum", "Vredespaleis", "Kurhaus"], "correct": 1, "category": "politiek" },
 
     { "question": "Welke Nederlandse influencer opende een eigen restaurant in 2025?", "answers": ["Enzo Knol", "Monica Geuze", "Anna Nooshin", "Mascha Feoktistova"], "correct": 2, "category": "tieners" },
 
@@ -86,7 +86,7 @@
 
     { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3, "category": "nederland" },
 
-    { "question": "Welke club won de Champions League 2024-2025?", "answers": ["Real Madrid", "Manchester City", "Bayern München", "Inter Milan"], "correct": 0, "category": "sport" },
+    { "question": "Welke club won de Champions League 2024-2025?", "answers": ["Real Madrid", "Paris Saint-Germain", "Bayern München", "Inter Milan"], "correct": 1, "category": "sport" },
 
     { "question": "Wie won de Tour de France 2025?", "answers": ["Tadej Pogačar", "Jonas Vingegaard", "Remco Evenepoel", "Primož Roglič"], "correct": 0, "category": "sport" },
 
