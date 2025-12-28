@@ -378,12 +378,59 @@
             { question: "Welke 'Top Gun' en 'The Doors' acteur overleed op 1 april 2025?", answers: ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], correct: 1 }
         ];
 
-        // Shuffle vragen bij start van elk spel
+        // Shuffle en selecteer vragen voor ~20 min quiz (max 25 vragen)
         function shuffleQuestions() {
-            for (let i = questions.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [questions[i], questions[j]] = [questions[j], questions[i]];
+            const MAX_QUESTIONS = 25;
+
+            // Als er minder vragen zijn dan max, gewoon shufflen
+            if (questions.length <= MAX_QUESTIONS) {
+                for (let i = questions.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [questions[i], questions[j]] = [questions[j], questions[i]];
+                }
+                return;
             }
+
+            // Groepeer vragen per categorie
+            const byCategory = {};
+            questions.forEach(q => {
+                const cat = q.category || 'algemeen';
+                if (!byCategory[cat]) byCategory[cat] = [];
+                byCategory[cat].push(q);
+            });
+
+            // Shuffle elke categorie
+            Object.values(byCategory).forEach(arr => {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+            });
+
+            // Selecteer vragen afwisselend uit categorieën
+            const categories = Object.keys(byCategory);
+            const selected = [];
+            let catIndex = 0;
+
+            while (selected.length < MAX_QUESTIONS) {
+                const cat = categories[catIndex % categories.length];
+                if (byCategory[cat].length > 0) {
+                    selected.push(byCategory[cat].shift());
+                }
+                catIndex++;
+                // Stop als alle categorieën leeg zijn
+                if (Object.values(byCategory).every(arr => arr.length === 0)) break;
+            }
+
+            // Shuffle de geselecteerde vragen voor willekeurige volgorde
+            for (let i = selected.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [selected[i], selected[j]] = [selected[j], selected[i]];
+            }
+
+            // Vervang questions array
+            questions.length = 0;
+            questions.push(...selected);
         }
 
         
