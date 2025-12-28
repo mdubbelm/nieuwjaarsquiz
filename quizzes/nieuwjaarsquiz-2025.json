@@ -58,9 +58,9 @@
 
     { "question": "Welke Franse filmster en zangeres, sekssymbool van de jaren 60, overleed in december 2025?", "answers": ["Catherine Deneuve", "Brigitte Bardot", "Jeanne Moreau", "Françoise Hardy"], "correct": 1, "category": "entertainment", "resultAudio": "audio/result-harley-davidson.m4a", "resultText": "Harley Davidson - Brigitte Bardot" },
 
-    { "question": "Welke Nederlandse stad kreeg in 2025 een eigen versie van Monopoly?", "answers": ["Rotterdam", "Utrecht", "Eindhoven", "Groningen"], "correct": 2, "category": "fun" },
+    { "question": "Welke disco-band trad op tijdens de inauguratie van Donald Trump in januari 2025?", "answers": ["ABBA", "Bee Gees", "Boney M", "Village People"], "correct": 3, "category": "entertainment" },
 
-    { "question": "Welke dierentuin vierde in 2025 zijn 100-jarig bestaan?", "answers": ["Artis", "Blijdorp", "Burgers' Zoo", "Ouwehands"], "correct": 2, "category": "nederland" },
+    { "question": "Welke politieke partij vormde in 2025 voor het eerst de grootste Tweede Kamerfractie?", "answers": ["VVD", "PVV", "NSC", "GroenLinks-PvdA"], "correct": 1, "category": "politiek" },
 
     { "question": "Welke K-pop groep kondigde een comeback aan in 2025?", "answers": ["BTS", "Blackpink", "Stray Kids", "NewJeans"], "correct": 0, "category": "tieners" },
 
@@ -70,19 +70,19 @@
 
     { "question": "In welk gebouw in Den Haag vond de NAVO-top 2025 plaats?", "answers": ["Binnenhof", "World Forum", "Vredespaleis", "Kurhaus"], "correct": 1, "category": "politiek" },
 
-    { "question": "Welke Nederlandse influencer opende een eigen restaurant in 2025?", "answers": ["Enzo Knol", "Monica Geuze", "Anna Nooshin", "Mascha Feoktistova"], "correct": 2, "category": "tieners" },
+    { "question": "Welk land won het Eurovisie Songfestival 2025 in Basel?", "answers": ["Nederland", "Oostenrijk", "Zwitserland", "Israël"], "correct": 1, "category": "entertainment" },
 
-    { "question": "Hoeveel mensen liepen mee bij de grootste 'Rode Lijn' klimaatdemonstratie?", "answers": ["50.000", "100.000", "150.000", "250.000"], "correct": 3, "category": "nederland" },
+    { "question": "Hoeveel mensen liepen mee bij de grootste 'Rode Lijn' demonstratie (over Gaza) in Amsterdam?", "answers": ["50.000", "100.000", "150.000", "250.000"], "correct": 3, "category": "nederland" },
 
     { "question": "Welke AI-tool werd in 2025 het meest gebruikt door scholieren?", "answers": ["ChatGPT", "Claude", "Gemini", "Copilot"], "correct": 0, "category": "tieners" },
 
     { "question": "Hoe warm was de zomer van 2025 in Nederland volgens het KNMI?", "answers": ["Koudste ooit", "Normaal", "Warmste ooit", "Op drie na warmste"], "correct": 3, "category": "nederland" },
 
-    { "question": "Welke emoji werd het meest gebruikt in 2025?", "answers": ["😂", "❤️", "🥹", "💀"], "correct": 2, "category": "fun" },
+    { "question": "Welke emoji werd het meest gebruikt in 2025?", "answers": ["😂", "❤️", "🥹", "💀"], "correct": 0, "category": "fun" },
 
     { "question": "Welk merk bracht de duurste sneakers van 2025 uit?", "answers": ["Nike", "Adidas", "Louis Vuitton", "Balenciaga"], "correct": 2, "category": "tieners" },
 
-    { "question": "Welke klassieke Nederlandse film werd in 2025 opnieuw uitgebracht in 4K?", "answers": ["Turks Fruit", "Flodder", "Soldaat van Oranje", "De Lift"], "correct": 2, "category": "entertainment" },
+    { "question": "Hoeveel hittegolven had Nederland in de zomer van 2025?", "answers": ["Geen", "Eén", "Twee", "Drie"], "correct": 2, "category": "nederland" },
 
     { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3, "category": "nederland" },
 
@@ -96,25 +96,25 @@
 
     { "question": "Hoe heette de nieuwe paus die in 2025 werd gekozen?", "answers": ["Franciscus II", "Leo XIV", "Pius XIII", "Johannes XXIV"], "correct": 1, "category": "wereld" },
 
-    { "question": "Welke Nederlandse tennisser bereikte in 2025 de top 10 van de wereld?", "answers": ["Botic van de Zandschulp", "Tallon Griekspoor", "Tim van Rijthoven", "Robin Haase"], "correct": 1, "category": "sport" },
+    { "question": "Welke Nederlandse tennisser versloeg in 2025 zowel Sinner als Zverev toen zij nummer 2 van de wereld waren?", "answers": ["Botic van de Zandschulp", "Tallon Griekspoor", "Tim van Rijthoven", "Robin Haase"], "correct": 1, "category": "sport" },
 
-    { "question": "Welk bedrijf lanceerde in 2025 de eerste volledig zelfrijdende taxi's in Europa?", "answers": ["Tesla", "Waymo", "Uber", "Mobileye"], "correct": 1, "category": "technologie" },
+    { "question": "Welk bedrijf kondigde in 2025 aan zelfrijdende taxi's naar Londen te brengen (start 2026)?", "answers": ["Tesla", "Waymo", "Uber", "Mobileye"], "correct": 1, "category": "technologie" },
 
     { "question": "Welke Nederlandse comedian won de Oudejaarsconference 2024?", "answers": ["Youp van 't Hek", "Claudia de Breij", "Martijn Koning", "Peter Pannekoek"], "correct": 2, "category": "entertainment" },
 
-    { "question": "Welk festival vierde in 2025 zijn 50-jarig jubileum?", "answers": ["Pinkpop", "Lowlands", "North Sea Jazz", "Parkpop"], "correct": 2, "category": "cultuur" },
+    { "question": "Welk festival bestaat in 2025 het langst?", "answers": ["Pinkpop (sinds 1970)", "Lowlands (sinds 1993)", "North Sea Jazz (sinds 1976)", "Parkpop (sinds 1981)"], "correct": 0, "category": "cultuur" },
 
     { "question": "Welke Nederlandse stad werd in 2025 uitgeroepen tot Europese Culturele Hoofdstad?", "answers": ["Rotterdam", "Utrecht", "Eindhoven", "Geen Nederlandse stad"], "correct": 3, "category": "cultuur" },
 
     { "question": "Hoeveel Grammy's won Beyoncé in 2025?", "answers": ["0", "2", "4", "6"], "correct": 2, "category": "muziek" },
 
-    { "question": "Welke artiest brak het record voor meeste streams op Spotify in 2025?", "answers": ["Taylor Swift", "Bad Bunny", "The Weeknd", "Drake"], "correct": 0, "category": "muziek" },
+    { "question": "Welke artiest heeft de meeste streams ooit op Spotify (2025)?", "answers": ["Taylor Swift", "Bad Bunny", "The Weeknd", "Drake"], "correct": 0, "category": "muziek" },
 
-    { "question": "Welke Nederlandse band won een Edison Award in 2025?", "answers": ["Kensington", "Krezip", "BLØF", "De Staat"], "correct": 1, "category": "muziek" },
+    { "question": "Wie won de Edison Pop Award voor Best Album in 2025?", "answers": ["Roxy Dekker", "Froukje", "Eefje de Visser", "Frenna"], "correct": 1, "category": "muziek" },
 
     { "question": "Welk klimaatakkoord werd in 2025 aangescherpt?", "answers": ["Kyoto Protocol", "Parijs Akkoord", "Glasgow Pact", "Montreal Protocol"], "correct": 1, "category": "wereld" },
 
-    { "question": "In welke maand was de langste hittegolf ooit in Nederland (2025)?", "answers": ["Juni", "Juli", "Augustus", "September"], "correct": 1, "category": "nederland" },
+    { "question": "In welke maand was de langste hittegolf van 2025 in Nederland?", "answers": ["Juni", "Juli", "Augustus", "September"], "correct": 2, "category": "nederland" },
 
     { "question": "Welke streamingserie brak kijkcijferrecords in 2025?", "answers": ["Squid Game S2", "Stranger Things S5", "The Last of Us S2", "House of the Dragon S3"], "correct": 0, "category": "entertainment" },
 
@@ -124,15 +124,15 @@
 
     { "question": "Welke Nederlandse atleet won goud op het WK Atletiek 2025?", "answers": ["Sifan Hassan", "Femke Bol", "Dafne Schippers", "Nadine Visser"], "correct": 1, "category": "sport" },
 
-    { "question": "Welk attractiepark opende in 2025 een nieuwe achtbaan?", "answers": ["Efteling", "Walibi", "Toverland", "Phantasialand"], "correct": 0, "category": "fun" },
+    { "question": "Welke nieuwe attractie bouwt de Efteling bij Baron 1898, opening 2026?", "answers": ["Een achtbaan", "Een waterbaan", "Een vrije val-toren (Hooghmoed)", "Een spookhuis"], "correct": 2, "category": "fun" },
 
-    { "question": "Welke Nederlandse film was de best bezochte in 2025?", "answers": ["Bon Bini Holland 4", "Toren C: De Film", "De Oost", "Instinct"], "correct": 0, "category": "entertainment" },
+    { "question": "Met welk nummer won JJ uit Oostenrijk het Eurovisie Songfestival 2025?", "answers": ["Wasted Love", "C'est la vie", "YMCA", "Hallelujah"], "correct": 0, "category": "entertainment" },
 
-    { "question": "Welke techgigant werd in 2025 beboet voor €2 miljard door de EU?", "answers": ["Google", "Apple", "Meta", "Microsoft"], "correct": 2, "category": "technologie" },
+    { "question": "Welke techgigant kreeg in 2025 de eerste EU-boete onder de Digital Markets Act (DMA)?", "answers": ["Google", "Apple", "Meta", "Microsoft"], "correct": 2, "category": "technologie" },
 
     { "question": "Hoe oud werd Koning Willem-Alexander in 2025?", "answers": ["55 jaar", "56 jaar", "57 jaar", "58 jaar"], "correct": 3, "category": "nederland" },
 
-    { "question": "Welke rapper had de nummer 1 hit op Koningsdag 2025?", "answers": ["Snelle", "Lil Kleine", "Frenna", "Donnie"], "correct": 3, "category": "muziek" },
+    { "question": "Welke rapper deed mee aan de Holle Dolle Donnie-campagne voor Statiegeld Nederland op Koningsdag 2025?", "answers": ["Snelle", "Lil Kleine", "Frenna", "Donnie"], "correct": 3, "category": "muziek" },
 
     { "question": "Welk Formule 1 team won het constructeurskampioenschap 2024?", "answers": ["Red Bull Racing", "Ferrari", "McLaren", "Mercedes"], "correct": 2, "category": "sport" },
 
@@ -140,12 +140,30 @@
 
     { "question": "Welke Nederlandse minister werd in 2025 het meest besproken?", "answers": ["Fleur Agema", "Reinette Klever", "Barry Madlener", "Geert Wilders"], "correct": 3, "category": "politiek" },
 
-    { "question": "Hoeveel keer ging Albert Heijn in 2025 in prijs omhoog?", "answers": ["1 keer", "2 keer", "3 keer", "4 keer"], "correct": 2, "category": "fun" },
+    { "question": "Hoeveel abonnees bereikte Netflix wereldwijd voor het eerst in 2025?", "answers": ["200 miljoen", "250 miljoen", "300 miljoen", "350 miljoen"], "correct": 2, "category": "entertainment" },
 
     { "question": "Welke game was de bestverkochte in Nederland in 2025?", "answers": ["GTA VI", "EA FC 25", "Call of Duty", "Zelda"], "correct": 1, "category": "tieners" },
 
-    { "question": "In welke stad opende IKEA zijn grootste Nederlandse vestiging?", "answers": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven"], "correct": 0, "category": "nederland" },
+    { "question": "Welke serie van Netflix kreeg een derde en laatste seizoen aangekondigd voor juni 2025?", "answers": ["Stranger Things", "Squid Game", "Wednesday", "The Crown"], "correct": 1, "category": "entertainment" },
 
-    { "question": "Welke Britse rockband kondigde een reünie aan in 2025?", "answers": ["The Smiths", "Oasis", "Pink Floyd", "Led Zeppelin"], "correct": 1, "category": "muziek" }
+    { "question": "Welke Britse rockband kondigde een reünie aan in 2025?", "answers": ["The Smiths", "Oasis", "Pink Floyd", "Led Zeppelin"], "correct": 1, "category": "muziek" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["Europapa - Joost Klein", "C'est la vie - Claude", "Wasted Love - JJ", "Zoutelande - BLØF"], "correct": 1, "type": "music", "audioFile": "audio/06-cest-la-vie.m4a", "category": "muziek" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["C'est la vie - Claude", "Wasted Love - JJ", "Rise Like a Phoenix - Conchita", "Euphoria - Loreen"], "correct": 1, "type": "music", "audioFile": "audio/07-wasted-love.m4a", "category": "muziek" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["Anti-Hero - Taylor Swift", "Cruel Summer - Taylor Swift", "The Fate of Ophelia - Taylor Swift", "Shake It Off - Taylor Swift"], "correct": 2, "type": "music", "audioFile": "audio/08-fate-of-ophelia.m4a", "category": "muziek" },
+
+    { "question": "Welk nummer hoor je?", "answers": ["Don't Look Back in Anger - Oasis", "Wonderwall - Oasis", "Champagne Supernova - Oasis", "Live Forever - Oasis"], "correct": 1, "type": "music", "audioFile": "audio/09-wonderwall.m4a", "category": "muziek" },
+
+    { "question": "Welke Beach Boys-oprichter overleed in juni 2025?", "answers": ["Mike Love", "Al Jardine", "Brian Wilson", "Dennis Wilson"], "correct": 2, "category": "muziek", "resultAudio": "audio/result-good-vibrations.m4a", "resultText": "Good Vibrations - The Beach Boys" },
+
+    { "question": "Welke Nederlandse zanger van ''t Is weer voorbij die mooie zomer' overleed in september 2025?", "answers": ["Rob de Nijs", "Gerard Cox", "Boudewijn de Groot", "Ramses Shaffy"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-mooie-zomer.m4a", "resultText": "'t Is weer voorbij die mooie zomer - Gerard Cox" },
+
+    { "question": "Welke reggae-legende, bekend van 'Reggae Night', overleed in november 2025?", "answers": ["Bob Marley", "Peter Tosh", "Jimmy Cliff", "Toots Hibbert"], "correct": 2, "category": "muziek", "resultAudio": "audio/result-reggae-night.m4a", "resultText": "Reggae Night - Jimmy Cliff" },
+
+    { "question": "Welke Black Sabbath-zanger overleed in juli 2025?", "answers": ["Ronnie James Dio", "Ozzy Osbourne", "Tony Martin", "Ian Gillan"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-crazy-train.m4a", "resultText": "Crazy Train - Ozzy Osbourne" },
+
+    { "question": "Welke helft van het legendarische soulduo Sam & Dave overleed in januari 2025?", "answers": ["Dave Prater", "Sam Moore", "Beide", "Geen van beiden"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-soul-man.m4a", "resultText": "Soul Man - Sam & Dave" }
   ]
 }
