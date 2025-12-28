@@ -122,8 +122,8 @@
         .mini-score-row:nth-child(2) { background: rgba(192,192,192,0.3); }
         .mini-score-row:nth-child(3) { background: rgba(205,127,50,0.3); }
         .mini-score-row .score-rank { font-size: 1.2rem; width: 35px; }
-        .mini-score-row .score-name { flex: 1; font-size: 1rem; }
-        .mini-score-row .score-points { font-size: 1rem; }
+        .mini-score-row .score-name { flex: 1; font-size: 1rem; padding-right: 15px; }
+        .mini-score-row .score-points { font-size: 1rem; font-family: 'Space Mono', monospace; }
         .streak-badge { display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(135deg, var(--orange), var(--red)); padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; margin-left: 10px; }
         .points-popup { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Space Mono', monospace; font-size: 4rem; font-weight: 700; color: var(--gold); text-shadow: 0 0 30px rgba(255,215,0,0.5); animation: pointsPopup 1.5s forwards; z-index: 1000; pointer-events: none; }
         @keyframes pointsPopup { 0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); } 20% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); } 40% { transform: translate(-50%, -50%) scale(1); } 100% { opacity: 0; transform: translate(-50%, -70%); } }
@@ -987,23 +987,8 @@
 
             showScreen('player-answered');
 
-            // Wait for next question or show feedback
-            setTimeout(async () => {
-                const q = questions[gameState.currentQuestion];
-                const isCorrect = idx === q.correct;
-
-                if (isCorrect) {
-                    gameState.myScore += 100 + (15 * 5);
-                }
-
-                document.getElementById('feedback-icon').textContent = isCorrect ? '✓' : '✗';
-                document.getElementById('feedback-icon').className = 'feedback ' + (isCorrect ? 'feedback-correct' : 'feedback-wrong');
-                document.getElementById('feedback-text').textContent = isCorrect ? 'Goed zo!' : 'Helaas!';
-                document.getElementById('points-earned').textContent = isCorrect ? '+175 punten' : '+0 punten';
-                document.getElementById('player-total-score').textContent = gameState.myScore;
-
-                showScreen('player-feedback');
-            }, 3000);
+            // Wacht op volgende vraag - feedback komt via database
+            // (We kunnen lokaal niet checken omdat vragen geshuffeld zijn op host)
         }
 
         function enableAnswerButtons() {
