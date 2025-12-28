@@ -457,11 +457,15 @@
                         <div class="video-overlay" id="video-overlay"></div>
                         <iframe src="https://www.youtube-nocookie.com/embed/${q.videoId}?autoplay=1&mute=0&start=${q.startTime}&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
                     </div>`;
-                // Verberg overlay na 3 seconden (na eventuele reclame)
+                // Verberg overlay na 5 seconden (geeft tijd voor video laad + eventuele reclame)
                 setTimeout(() => {
                     const overlay = document.getElementById('video-overlay');
-                    if (overlay) overlay.style.display = 'none';
-                }, 3000);
+                    if (overlay) {
+                        overlay.style.transition = 'opacity 0.5s';
+                        overlay.style.opacity = '0';
+                        setTimeout(() => overlay.style.display = 'none', 500);
+                    }
+                }, 5000);
             } else {
                 mediaContainer.innerHTML = '';
             }
