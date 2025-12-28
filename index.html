@@ -30,15 +30,23 @@
         .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
         .btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 2px solid rgba(255,255,255,0.2); }
         .btn-secondary:hover { background: rgba(255,255,255,0.2); transform: translateY(-3px); }
-        .game-code-container { background: linear-gradient(135deg, var(--purple), var(--pink)); border-radius: 30px; padding: 40px 60px; margin-bottom: 40px; box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3); }
+        .lobby-layout { display: flex; flex-direction: column; align-items: center; gap: 30px; width: 100%; max-width: 1000px; }
+        .lobby-join-info { display: flex; flex-direction: column; align-items: center; }
+        .lobby-players-section { display: flex; flex-direction: column; align-items: center; }
+        @media (min-width: 768px) {
+            .lobby-layout { flex-direction: row; align-items: flex-start; justify-content: center; gap: 60px; }
+            .lobby-join-info { align-items: center; }
+            .lobby-players-section { align-items: center; min-width: 300px; }
+        }
+        .game-code-container { background: linear-gradient(135deg, var(--purple), var(--pink)); border-radius: 30px; padding: 30px 40px; margin-bottom: 20px; box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3); display: flex; flex-direction: column; align-items: center; }
         .game-code-label { font-size: 1rem; opacity: 0.8; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px; }
-        .game-code { font-family: 'Space Mono', monospace; font-size: clamp(3rem, 10vw, 5rem); font-weight: 700; letter-spacing: 10px; }
-        .qr-container { background: white; padding: 20px; border-radius: 20px; margin: 30px 0; display: inline-block; }
+        .game-code { font-family: 'Space Mono', monospace; font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 700; letter-spacing: 0.15em; }
+        .qr-container { background: white; padding: 15px; border-radius: 20px; margin: 15px 0; display: inline-block; }
         .qr-container canvas { display: block; }
-        .join-url { font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 30px; word-break: break-all; max-width: 400px; }
-        .players-waiting { margin-top: 30px; }
+        .join-url { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 0; word-break: break-all; max-width: 300px; text-align: center; }
+        .players-waiting { margin-top: 0; }
         .players-title { font-size: 1.5rem; margin-bottom: 20px; color: var(--gold); }
-        .players-grid { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; max-width: 800px; }
+        .players-grid { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; max-width: 400px; }
         .player-chip { background: rgba(255,255,255,0.1); padding: 12px 25px; border-radius: 50px; font-weight: 600; animation: playerJoin 0.5s; border: 2px solid rgba(255,255,255,0.2); }
         @keyframes playerJoin { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
         .join-input { font-family: 'Outfit', sans-serif; font-size: 1.5rem; padding: 20px 30px; border: 3px solid rgba(255,255,255,0.2); border-radius: 20px; background: rgba(255,255,255,0.05); color: white; text-align: center; width: 100%; max-width: 400px; margin-bottom: 20px; }
@@ -144,8 +152,8 @@
         @media (max-width: 600px) {
             .answers-grid { grid-template-columns: 1fr; }
             .answer-option { padding: 18px; }
-            .game-code-container { padding: 25px 35px; }
-            .game-code { letter-spacing: 5px; }
+            .game-code-container { padding: 20px 30px; }
+            .game-code { letter-spacing: 0.1em; }
             .video-container iframe { height: 200px; }
         }
     </style>
@@ -179,18 +187,24 @@
 
         <!-- Host Lobby -->
         <div class="screen" id="host-lobby">
-            <h2 id="quiz-title" style="font-size: 1.5rem; margin-bottom: 20px; opacity: 0.8;"></h2>
-            <div class="game-code-container">
-                <div class="game-code-label">Spelcode</div>
-                <div class="game-code" id="game-code">----</div>
+            <h2 id="quiz-title" style="font-size: 1.5rem; margin-bottom: 30px; opacity: 0.8;"></h2>
+            <div class="lobby-layout">
+                <div class="lobby-join-info">
+                    <div class="game-code-container">
+                        <div class="game-code-label">Spelcode</div>
+                        <div class="game-code" id="game-code">----</div>
+                    </div>
+                    <div class="qr-container"><img id="qr-code" width="180" height="180" alt="QR Code"></div>
+                    <p class="join-url" id="join-url">Scan de QR-code of ga naar deze pagina</p>
+                </div>
+                <div class="lobby-players-section">
+                    <div class="players-waiting">
+                        <h3 class="players-title">Spelers (<span id="player-count">0</span>)</h3>
+                        <div class="players-grid" id="players-grid"></div>
+                    </div>
+                    <button class="btn btn-primary" id="start-game-btn" onclick="startGame()" style="margin-top: 30px;" disabled>Start de Quiz!</button>
+                </div>
             </div>
-            <div class="qr-container"><img id="qr-code" width="200" height="200" alt="QR Code"></div>
-            <p class="join-url" id="join-url">Scan de QR-code of ga naar deze pagina</p>
-            <div class="players-waiting">
-                <h3 class="players-title">Spelers (<span id="player-count">0</span>)</h3>
-                <div class="players-grid" id="players-grid"></div>
-            </div>
-            <button class="btn btn-primary" id="start-game-btn" onclick="startGame()" style="margin-top: 40px;" disabled>Start de Quiz!</button>
         </div>
 
         <!-- Player Join -->
@@ -480,7 +494,7 @@
             document.getElementById('join-url').textContent = joinUrl;
 
             // Use QR code API (no library needed)
-            const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(joinUrl)}`;
+            const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(joinUrl)}`;
             document.getElementById('qr-code').src = qrUrl;
 
             // Subscribe to player joins
