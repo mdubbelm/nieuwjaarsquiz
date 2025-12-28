@@ -217,8 +217,9 @@
 
         <!-- Host Results -->
         <div class="screen" id="host-results">
-            <h2 style="font-size: 2rem; margin-bottom: 10px;">Resultaten</h2>
-            <p id="correct-answer-text" style="font-size: 1.2rem; color: var(--green); margin-bottom: 30px;"></p>
+            <p id="results-question-number" style="font-size: 1rem; opacity: 0.7; margin-bottom: 10px;"></p>
+            <h2 id="results-question-text" style="font-size: 1.5rem; margin-bottom: 20px; max-width: 800px;"></h2>
+            <p id="correct-answer-text" style="font-size: 1.3rem; color: var(--green); margin-bottom: 30px;"></p>
             <div class="results-container" id="results-container"></div>
             <button class="btn btn-primary" onclick="nextQuestion()" style="margin-top: 40px;">Volgende vraag</button>
         </div>
@@ -436,13 +437,25 @@
         }
 
         function startTimer(seconds) {
+            // BELANGRIJK: Clear bestaande timer eerst!
+            if (gameState.timer) {
+                clearInterval(gameState.timer);
+                gameState.timer = null;
+            }
+
             gameState.timeLeft = seconds;
             updateTimerDisplay();
+
+            // Start achtergrondmuziek
+            startBackgroundMusic();
+
             gameState.timer = setInterval(() => {
                 gameState.timeLeft--;
                 updateTimerDisplay();
                 if (gameState.timeLeft <= 0) {
                     clearInterval(gameState.timer);
+                    gameState.timer = null;
+                    stopBackgroundMusic();
                     timeUp();
                 }
             }, 1000);
@@ -461,6 +474,8 @@
 
         // Timer tick geluid met Web Audio API
         let audioCtx = null;
+        let bgMusicInterval = null;
+
         function playTick(urgent) {
             try {
                 if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -468,11 +483,44 @@
                 const gain = audioCtx.createGain();
                 osc.connect(gain);
                 gain.connect(audioCtx.destination);
-                osc.frequency.value = urgent ? 880 : 440; // Hogere toon bij laatste 5 sec
+                osc.frequency.value = urgent ? 880 : 440;
                 gain.gain.value = 0.3;
                 osc.start();
                 osc.stop(audioCtx.currentTime + 0.1);
             } catch (e) { /* Audio niet beschikbaar */ }
+        }
+
+        // Vrolijk achtergrondmuziekje (simpele melodie loop)
+        function startBackgroundMusic() {
+            if (bgMusicInterval) return; // Al aan het spelen
+
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+                const notes = [523, 587, 659, 698, 784, 698, 659, 587]; // C5 D5 E5 F5 G5 F5 E5 D5
+                let noteIndex = 0;
+
+                bgMusicInterval = setInterval(() => {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.frequency.value = notes[noteIndex % notes.length];
+                    osc.type = 'sine';
+                    gain.gain.value = 0.15;
+                    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.2);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.2);
+                    noteIndex++;
+                }, 250);
+            } catch (e) { /* Audio niet beschikbaar */ }
+        }
+
+        function stopBackgroundMusic() {
+            if (bgMusicInterval) {
+                clearInterval(bgMusicInterval);
+                bgMusicInterval = null;
+            }
         }
 
         async function timeUp() {
@@ -521,6 +569,9 @@
                 setTimeout(() => bar.querySelector('.result-fill').style.width = Math.max(60, (count / maxCount) * 350) + 'px', 100);
             });
 
+            // Toon vraagnummer en vraag
+            document.getElementById('results-question-number').textContent = `Vraag ${gameState.currentQuestion + 1} van ${questions.length}`;
+            document.getElementById('results-question-text').textContent = q.question;
             document.getElementById('correct-answer-text').textContent = `✓ ${q.answers[q.correct]}`;
             showScreen('host-results');
         }
