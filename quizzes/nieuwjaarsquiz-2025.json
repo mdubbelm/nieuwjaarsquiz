@@ -4,8 +4,6 @@
   "description": "Test je kennis over 2025!",
   "questions": [
 
-    { "question": "Na maanden van ruzie over het asielbeleid trok Geert Wilders de stekker eruit. Welke partij stapte in juni 2025 uit de coalitie?", "answers": ["VVD", "PVV", "NSC", "BBB"], "correct": 1, "category": "politiek" },
-
     { "question": "Voor het eerst in de geschiedenis kwam de NAVO bijeen in Nederland. In welke stad was deze historische top in juni 2025?", "answers": ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht"], "correct": 2, "category": "politiek" },
 
     { "question": "Lady Gaga en Bruno Mars scoorden samen een megahit in 2024. Welk nummer hoor je?", "answers": ["Shallow", "Die With A Smile", "Just Dance", "Uptown Funk"], "correct": 1, "type": "music", "audioFile": "audio/01-die-with-a-smile.m4a", "category": "muziek" },
@@ -46,8 +44,6 @@
 
     { "question": "Dansen of verboden? Deze populaire app ging in de VS bijna op zwart in 2025. Welke?", "answers": ["Instagram", "TikTok", "Snapchat", "BeReal"], "correct": 1, "category": "tieners" },
 
-    { "question": "Make America Great Again... again! Wie keerde in januari 2025 terug in het Witte Huis?", "answers": ["Joe Biden", "Donald Trump", "Kamala Harris", "Ron DeSantis"], "correct": 1, "category": "wereld" },
-
     { "question": "Ciao Italia! Welke Oranjetelg studeerde in 2025 af aan een school onder de Toscaanse zon?", "answers": ["Amalia", "Alexia", "Ariane", "Beatrix"], "correct": 2, "category": "nederland" },
 
     { "question": "Snap snap! De gothic tiener is terug voor seizoen 2. Op welke streamingdienst verscheen Wednesday in 2025?", "answers": ["Disney+", "Netflix", "Amazon Prime", "HBO Max"], "correct": 1, "category": "tieners" },
@@ -57,10 +53,6 @@
     { "question": "Iceman vloog voor het laatst: welke 'Top Gun'-acteur overleed op 1 april 2025?", "answers": ["Tom Cruise", "Val Kilmer", "Michael Douglas", "Kevin Bacon"], "correct": 1, "category": "entertainment" },
 
     { "question": "Dit Franse sekssymbool zette de jaren 60 in vuur en vlam met films én muziek. Wie overleed in december 2025?", "answers": ["Catherine Deneuve", "Brigitte Bardot", "Jeanne Moreau", "Françoise Hardy"], "correct": 1, "category": "entertainment", "resultAudio": "audio/result-harley-davidson.m4a", "resultText": "Harley Davidson - Brigitte Bardot" },
-
-    { "question": "Y.M.C.A.! Welke disco-iconen dansten op de inauguratie van Donald Trump in januari 2025?", "answers": ["ABBA", "Bee Gees", "Boney M", "Village People"], "correct": 3, "category": "entertainment" },
-
-    { "question": "Een historische primeur: welke partij werd in 2025 voor het eerst de grootste fractie in de Tweede Kamer?", "answers": ["VVD", "PVV", "NSC", "GroenLinks-PvdA"], "correct": 1, "category": "politiek" },
 
     { "question": "De zeven jongens zijn terug! Welke K-pop supergroep kondigde hun comeback aan in 2025?", "answers": ["BTS", "Blackpink", "Stray Kids", "NewJeans"], "correct": 0, "category": "tieners" },
 
@@ -137,8 +129,6 @@
     { "question": "Oranje jasjes, papaya's en Lando: welk F1-team werd constructeurskampioen 2024?", "answers": ["Red Bull Racing", "Ferrari", "McLaren", "Mercedes"], "correct": 2, "category": "sport" },
 
     { "question": "Geen vrede in zicht: welke conflicten woedden nog steeds in 2025?", "answers": ["Alleen Oekraïne", "Alleen Gaza", "Beide", "Geen van beide"], "correct": 2, "category": "wereld" },
-
-    { "question": "Controverses te over: welke bewindspersoon domineerde de krantenkoppen in 2025?", "answers": ["Fleur Agema", "Reinette Klever", "Barry Madlener", "Geert Wilders"], "correct": 3, "category": "politiek" },
 
     { "question": "Streamingrecord! Welke mijlpaal bereikte Netflix wereldwijd in 2025?", "answers": ["200 miljoen", "250 miljoen", "300 miljoen", "350 miljoen"], "correct": 2, "category": "entertainment" },
 
