@@ -30,9 +30,9 @@
 
     { "question": "Welke natuurramp trof Los Angeles begin januari 2025?", "answers": ["Aardbeving", "Orkaan", "Natuurbranden", "Overstroming"], "correct": 2, "category": "wereld" },
 
-    { "question": "Welke Golden Earring-gitarist overleed in 2025 aan ALS?", "answers": ["Barry Hay", "George Kooymans", "Rinus Gerritsen", "Cesar Zuiderwijk"], "correct": 1, "category": "muziek" },
+    { "question": "Welke Golden Earring-gitarist overleed in 2025 aan ALS?", "answers": ["Barry Hay", "George Kooymans", "Rinus Gerritsen", "Cesar Zuiderwijk"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-radar-love.m4a", "resultText": "Radar Love - Golden Earring" },
 
-    { "question": "Welke Nederlandse zanger, bekend van 'Banger Hart', overleed in maart 2025?", "answers": ["Gerard Cox", "Rob de Nijs", "Lee Towers", "Gordon"], "correct": 1, "category": "muziek" },
+    { "question": "Welke Nederlandse zanger, bekend van 'Banger Hart', overleed in maart 2025?", "answers": ["Gerard Cox", "Rob de Nijs", "Lee Towers", "Gordon"], "correct": 1, "category": "muziek", "resultAudio": "audio/result-banger-hart.m4a", "resultText": "Banger Hart - Rob de Nijs" },
 
     { "question": "Welke film won de Oscar voor Beste Film in 2025?", "answers": ["Oppenheimer", "Anora", "The Brutalist", "Emilia Pérez"], "correct": 1, "category": "entertainment" },
 
