@@ -388,10 +388,10 @@
                 .eq('id', gameState.sessionId);
 
             gameState.currentQuestion = 0;
-            showQuestion();
+            await showQuestion();
         }
 
-        function showQuestion() {
+        async function showQuestion() {
             const q = questions[gameState.currentQuestion];
             document.getElementById('question-number').textContent = `Vraag ${gameState.currentQuestion + 1}/${questions.length}`;
             document.getElementById('question-text').textContent = q.question;
@@ -418,9 +418,9 @@
             });
 
             // Update session with current question
-            db
+            await db
                 .from('game_sessions')
-                .update({ current_question: gameState.currentQuestion })
+                .update({ current_question: gameState.currentQuestion, updated_at: new Date().toISOString() })
                 .eq('id', gameState.sessionId);
 
             showScreen('host-question');
@@ -503,7 +503,7 @@
             } else if (gameState.currentQuestion % 5 === 0) {
                 await showScoreboard();
             } else {
-                showQuestion();
+                await showQuestion();
             }
         }
 
