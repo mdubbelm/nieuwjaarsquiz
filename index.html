@@ -894,8 +894,11 @@
             const isNewQuestion = session.current_question !== gameState.currentQuestion;
 
             if (session.status === 'playing') {
-                // Ga naar vraagscherm als vraag is veranderd OF we niet al op player-question zitten
-                if (isNewQuestion || currentScreen !== 'player-question') {
+                // Alleen naar vraagscherm als het een NIEUWE vraag is
+                // OF als we nog in de wachtlobby zitten
+                const shouldShowQuestion = isNewQuestion || currentScreen === 'player-waiting';
+
+                if (shouldShowQuestion) {
                     gameState.currentQuestion = session.current_question;
                     const q = questions[gameState.currentQuestion];
                     if (q) {
