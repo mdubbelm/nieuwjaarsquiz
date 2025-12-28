@@ -561,8 +561,6 @@
         // ==================
 
         async function joinGame() {
-            if (!initSupabase()) return;
-
             const code = document.getElementById('game-code-input').value.toUpperCase().trim();
             const name = document.getElementById('player-name-input').value.trim();
             const errorDiv = document.getElementById('join-error');
