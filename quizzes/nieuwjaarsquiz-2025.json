@@ -84,6 +84,68 @@
 
     { "question": "Welke klassieke Nederlandse film werd in 2025 opnieuw uitgebracht in 4K?", "answers": ["Turks Fruit", "Flodder", "Soldaat van Oranje", "De Lift"], "correct": 2, "category": "entertainment" },
 
-    { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3, "category": "nederland" }
+    { "question": "Wat werd gestolen uit het Drents Museum in januari 2025?", "answers": ["Romeinse munten", "Vikingsieraden", "Egyptische artefacten", "Dacische goudschatten"], "correct": 3, "category": "nederland" },
+
+    { "question": "Welke club won de Champions League 2024-2025?", "answers": ["Real Madrid", "Manchester City", "Bayern München", "Inter Milan"], "correct": 0, "category": "sport" },
+
+    { "question": "Wie won de Tour de France 2025?", "answers": ["Tadej Pogačar", "Jonas Vingegaard", "Remco Evenepoel", "Primož Roglič"], "correct": 0, "category": "sport" },
+
+    { "question": "Welk land organiseerde het Eurovisie Songfestival 2025?", "answers": ["Nederland", "Zwitserland", "Zweden", "Verenigd Koninkrijk"], "correct": 1, "category": "entertainment" },
+
+    { "question": "Welke paus overleed in 2025?", "answers": ["Benedictus XVI", "Franciscus", "Johannes Paulus II", "Geen van allen"], "correct": 1, "category": "wereld" },
+
+    { "question": "Hoe heette de nieuwe paus die in 2025 werd gekozen?", "answers": ["Franciscus II", "Leo XIV", "Pius XIII", "Johannes XXIV"], "correct": 1, "category": "wereld" },
+
+    { "question": "Welke Nederlandse tennisser bereikte in 2025 de top 10 van de wereld?", "answers": ["Botic van de Zandschulp", "Tallon Griekspoor", "Tim van Rijthoven", "Robin Haase"], "correct": 1, "category": "sport" },
+
+    { "question": "Welk bedrijf lanceerde in 2025 de eerste volledig zelfrijdende taxi's in Europa?", "answers": ["Tesla", "Waymo", "Uber", "Mobileye"], "correct": 1, "category": "technologie" },
+
+    { "question": "Welke Nederlandse comedian won de Oudejaarsconference 2024?", "answers": ["Youp van 't Hek", "Claudia de Breij", "Martijn Koning", "Peter Pannekoek"], "correct": 2, "category": "entertainment" },
+
+    { "question": "Welk festival vierde in 2025 zijn 50-jarig jubileum?", "answers": ["Pinkpop", "Lowlands", "North Sea Jazz", "Parkpop"], "correct": 2, "category": "cultuur" },
+
+    { "question": "Welke Nederlandse stad werd in 2025 uitgeroepen tot Europese Culturele Hoofdstad?", "answers": ["Rotterdam", "Utrecht", "Eindhoven", "Geen Nederlandse stad"], "correct": 3, "category": "cultuur" },
+
+    { "question": "Hoeveel Grammy's won Beyoncé in 2025?", "answers": ["0", "2", "4", "6"], "correct": 2, "category": "muziek" },
+
+    { "question": "Welke artiest brak het record voor meeste streams op Spotify in 2025?", "answers": ["Taylor Swift", "Bad Bunny", "The Weeknd", "Drake"], "correct": 0, "category": "muziek" },
+
+    { "question": "Welke Nederlandse band won een Edison Award in 2025?", "answers": ["Kensington", "Krezip", "BLØF", "De Staat"], "correct": 1, "category": "muziek" },
+
+    { "question": "Welk klimaatakkoord werd in 2025 aangescherpt?", "answers": ["Kyoto Protocol", "Parijs Akkoord", "Glasgow Pact", "Montreal Protocol"], "correct": 1, "category": "wereld" },
+
+    { "question": "In welke maand was de langste hittegolf ooit in Nederland (2025)?", "answers": ["Juni", "Juli", "Augustus", "September"], "correct": 1, "category": "nederland" },
+
+    { "question": "Welke streamingserie brak kijkcijferrecords in 2025?", "answers": ["Squid Game S2", "Stranger Things S5", "The Last of Us S2", "House of the Dragon S3"], "correct": 0, "category": "entertainment" },
+
+    { "question": "Hoeveel procent van de Nederlanders had in 2025 een elektrische auto?", "answers": ["5%", "10%", "15%", "25%"], "correct": 2, "category": "nederland" },
+
+    { "question": "Welke social media app lanceerde in 2025 een TikTok-concurrent?", "answers": ["Facebook", "LinkedIn", "X (Twitter)", "Snapchat"], "correct": 2, "category": "tieners" },
+
+    { "question": "Welke Nederlandse atleet won goud op het WK Atletiek 2025?", "answers": ["Sifan Hassan", "Femke Bol", "Dafne Schippers", "Nadine Visser"], "correct": 1, "category": "sport" },
+
+    { "question": "Welk attractiepark opende in 2025 een nieuwe achtbaan?", "answers": ["Efteling", "Walibi", "Toverland", "Phantasialand"], "correct": 0, "category": "fun" },
+
+    { "question": "Welke Nederlandse film was de best bezochte in 2025?", "answers": ["Bon Bini Holland 4", "Toren C: De Film", "De Oost", "Instinct"], "correct": 0, "category": "entertainment" },
+
+    { "question": "Welke techgigant werd in 2025 beboet voor €2 miljard door de EU?", "answers": ["Google", "Apple", "Meta", "Microsoft"], "correct": 2, "category": "technologie" },
+
+    { "question": "Hoe oud werd Koning Willem-Alexander in 2025?", "answers": ["55 jaar", "56 jaar", "57 jaar", "58 jaar"], "correct": 3, "category": "nederland" },
+
+    { "question": "Welke rapper had de nummer 1 hit op Koningsdag 2025?", "answers": ["Snelle", "Lil Kleine", "Frenna", "Donnie"], "correct": 3, "category": "muziek" },
+
+    { "question": "Welk Formule 1 team won het constructeurskampioenschap 2024?", "answers": ["Red Bull Racing", "Ferrari", "McLaren", "Mercedes"], "correct": 2, "category": "sport" },
+
+    { "question": "Welke oorlog duurde in 2025 nog steeds voort?", "answers": ["Alleen Oekraïne", "Alleen Gaza", "Beide", "Geen van beide"], "correct": 2, "category": "wereld" },
+
+    { "question": "Welke Nederlandse minister werd in 2025 het meest besproken?", "answers": ["Fleur Agema", "Reinette Klever", "Barry Madlener", "Geert Wilders"], "correct": 3, "category": "politiek" },
+
+    { "question": "Hoeveel keer ging Albert Heijn in 2025 in prijs omhoog?", "answers": ["1 keer", "2 keer", "3 keer", "4 keer"], "correct": 2, "category": "fun" },
+
+    { "question": "Welke game was de bestverkochte in Nederland in 2025?", "answers": ["GTA VI", "EA FC 25", "Call of Duty", "Zelda"], "correct": 1, "category": "tieners" },
+
+    { "question": "In welke stad opende IKEA zijn grootste Nederlandse vestiging?", "answers": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven"], "correct": 0, "category": "nederland" },
+
+    { "question": "Welke Britse rockband kondigde een reünie aan in 2025?", "answers": ["The Smiths", "Oasis", "Pink Floyd", "Led Zeppelin"], "correct": 1, "category": "muziek" }
   ]
 }
